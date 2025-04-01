@@ -18,7 +18,7 @@ public class SecurityConfig {
                 // Allow access to static resources (CSS, JS, images, webjars) without authentication
                 .requestMatchers("/css/**", "/js/**", "/images/**", "/webjars/**", "/favicon.ico").permitAll()
                 // Allow access to public pages like homepage, about, services (adjust paths as needed)
-                .requestMatchers("/", "/about", "/services", "/contact", "/testimonials", "/service-area", "/pricing", "/guarantees", "/blog/**").permitAll()
+                .requestMatchers("/", "/about", "/services", "/contact", "/testimonials", "/service-area", "/pricing", "/guarantees", "/blog/**", "/contact-submit").permitAll()
                  // TODO: Add specific rules for /admin/** later
                 // Any other request must be authenticated (e.g., for a future admin section)
                 .anyRequest().authenticated()
