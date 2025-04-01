@@ -1,0 +1,12 @@
+/* Add custom styles here later */
+body {
+    /* Example: Add a bit more padding at the top if navbar is fixed */
+    padding-top: 70px; 
+}
+
+/* Increase default container size slightly on larger screens (optional) */
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
